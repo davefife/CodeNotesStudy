@@ -8,6 +8,7 @@
 using namespace std;
 void insertionSort(int ar_size, int *  ar) {
 //more optimized, part two had different include files and did not allow vectors
+//my code worked but this version was elegant on the forum, so I have it here to study
 
 
 for (int i=1; i < ar_size; i++) {
