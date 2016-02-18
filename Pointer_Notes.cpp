@@ -7,11 +7,11 @@ p= &a;  //ampersand is at the memory location
 a=5;
 print p;  //204   //address of p assigned to &a
 print &a; //204  //address of a
-print &p  //64  //the address of p not the value it holds
+print &p ; //64  //the address of p not the value it holds
 
 print *p  //5 gives value at location it points to call dereference
 *p=8      
-print a // 8 *p is also the address a
+print a; // 8 *p is also the address a
 
 ////
 char c;
@@ -20,17 +20,17 @@ char *px;  //can also point to custom made Datatypes (classes)
 //if
 int a=49;  //prefer two seperate init with assign for less confusion
 int b=32;
-int *p=&a'
+int *p=&a;
 //then
 *p = b;  //this does not dereference it only assigns value of b to a
 *p=&b;   //this assigns value of *p to b
 
-void *p  //can give memory address but canot give value a it 
+void *p;  //can give memory address but canot give value a it 
 
 //pointer arithmetic
-p+1 //will not add by one but add by 4  or the size of a byte or the datatype
+p+1; //will not add by one but add by 4  or the size of a byte or the datatype
 
-*p+1 // deref gives garbage number because integer is not allocated to memory address
+*p+1; // deref gives garbage number because integer is not allocated to memory address
 
 //we also use pointer variables to dereference for
 // Access and Modify value
@@ -69,13 +69,13 @@ int sumOfElements(int A[]){  //compiler sees int* A call by reference st also pa
     for(i=0;i< size;i++ {
        sum+=A[i];
     }
-    return sum
+    return sum;
 }
                              
 
 int main(){
     int A[]={1,2,3,4,5};
-    int total = sumOfElements(A)
+    int total = sumOfElements(A);
  
     int total = sumOfElments(A,size);
 }
@@ -137,7 +137,7 @@ realloc -- void* realloc(void* ptr, size.t size) //re allocates to change memory
 
 int Add(int* a, int* b){
     int c =(*a)+(*b);  //dereferencing
-    return c
+    return c;
 }
 
 
